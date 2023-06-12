@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Matt Ventures</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="150px"></a>
+            </div> 
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>About Us</h2>
+                <br>
+                <br>
+                <p>This project was created by me, Ikehi Matthias, a passionate web developer with expertise in HTML, CSS, and JavaScript. With a keen eye for design and a love for crafting interactive web experiences, I embarked on this project to showcase my skills and provide a platform for users to explore the world of technology.</p>
+                <p>Using the power of HTML, I structured the content of this project, ensuring a seamless and organized presentation of information. CSS is then employed to enhance the visual appeal, bringing life to the project through custom styles, layouts, and animations.</p>
+                <p>JavaScript, a dynamic programming language, is utilized to introduce interactivity and functionality to the project. Through the implementation of interactive features, dynamic content updates, and user-friendly interfaces, I made this project engaging and enjoyable for users.</p>
+                <p>Aside from this project, I offer professional web development services to clients. If you are looking to have a website created for your business or personal use, I can help bring your vision to life. With years of experience and a dedication to delivering high-quality results, I will be committed to create websites that are visually stunning, user-friendly, and optimized for performance.</p>
+                <p>Whether you need a simple static website, a dynamic web application, or an e-commerce platform, I can tailor the solution to your specific requirements. From conceptualization and design to development and deployment, I will guide you through the entire process, ensuring a smooth and successful website development experience.</p>
+                <p>For more information about the services offered and to discuss your project requirements, please reach out to Me via the contact details provided in the "Contact" section. The fees for website development services are competitive and vary based on the complexity and scope of the project. I am dedicated to providing transparent pricing and delivering excellent value for your investment.</p>
+                <p>Embark on your web development journey today with me, and let your online presence flourish!</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phones</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store">
+                        <img src="images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png" alt="Matt Ventures Logo">
+                    <p>Wear your personality with pride: Clothing that speaks to you</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright © 2023
+                | Terms of Service | Privacy</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<!-- Javascript for menu toggle -->
+<script src="scrollreveal.min.js"></script> 
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight ="0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight =="0px")
+            {
+                MenuItems.style.maxHeight ="200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight ="0px";
+            }
+    }
+    const sr = ScrollReveal({
+      origin:'top',
+      distance: '60px',
+      duration: 2500,
+      delay: 400.  
+    })
+
+sr.reveal(`.img2`, {origin: 'bottom'})
+sr.reveal(`.row.row-2`, {origin: 'left'})
+sr.reveal(`.footer, .skills__content`, {origin: 'right'})
+sr.reveal(`.services__card, .projects__card`, {interval: 100})
+    
+</script>
+</body>    
+</html>
